@@ -1,0 +1,469 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: beige;
+    background-image: url("image/bg\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/****header style*****/
+#heading{
+    position: relative;
+    height: 55px;
+    z-index: 1;
+    background-color: beige;
+
+}
+
+#logo{
+    position: absolute;
+    top: 5.5px;
+    display: inline;
+    left: 15%;
+}
+
+#logo img{
+    width:43px;
+    height:43px;
+}
+
+.links{
+    position: absolute;
+    display: inline;
+    right: 15%;
+}
+
+ul{
+    display: flex;
+    margin-top: 15px;
+}
+
+li{
+    list-style: none;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.liLink:hover{
+    color: #5392f9;
+    transition: all .2s ease;
+}
+
+
+.liLink{
+    text-decoration: none;
+    color: rgba(0,0,0,.75);
+}
+
+/**Form Section**/
+
+.ticketSection{
+    background-color:aliceblue;
+    height: 433.45px;
+    left: 50px;
+    margin: 0;
+    position: relative;
+    top: 100px;
+    width: 665.2px;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 600;
+    left: 35%;
+    position: absolute;
+    top: 15px;
+}
+
+#dateFormat{
+    font-size: 11px;;
+    left: 60.5%;
+    position: absolute;
+    top: 15.5%;
+}
+
+#imgBtn{
+    border-radius: 50%;
+    border: 0px;
+    height: 30.72;
+    left: 175px;
+    position: absolute;
+    top: 135px;
+    width: 30.72;
+}
+
+#exchangeArrow{
+    border-radius: 50%;
+    height: 30.72;
+    left: -5px;
+    position: relative;
+    transform: rotate(90deg);
+    width: 30.72;
+}
+
+/**symbols**/
+
+#fromImg{
+    height: 28px;
+    left: 35px;
+    position: absolute;
+    top: 21%;
+    width: 28px;
+    z-index: 1;
+}
+
+#toImg{
+    height: 28.08px;
+    left: 35px;
+    position: absolute;
+    top: 41%;
+    width: 26px;
+    z-index: 1;
+}
+
+#generalImg{
+    height: 28px;
+    left: 35px;
+    position: absolute;
+    top: 61%;
+    width: 28px;
+    z-index: 1;
+}
+
+#classImg{
+    height: 25px;
+    left: 61%;
+    position: absolute;
+    top: 41.5%;
+    width: 25px;
+    z-index: 1;
+}
+
+
+/**left side input field**/
+.leftSide{
+    display: inline;
+    font-weight: 600;
+    height: 40.85px;
+    left: 30px;
+    position: absolute;  
+    width: 340.53px;
+}
+
+#from{
+    padding-left: 35px;
+    top: 20%;
+}
+
+#to{
+    padding-left: 35px;
+    top: 40%;
+}
+
+#ticketType{
+    padding-left: 35px;
+    top: 60%;
+}
+
+/**right side input field**/
+.rightSide{
+    display: inline;
+    font-weight: 600;
+    height: 40.85px;
+    left: 60%;
+    position: absolute;
+    width: 234.66px;
+}
+
+#dateType{
+    top: 20%;
+}
+
+#classType{
+    padding-left: 35px;
+    top:40%;
+}
+
+/**checkbox styling**/
+.checkboxDiv{
+    color: #082b71;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    left: 30px;
+    position: absolute;
+    top: 75%;
+}
+
+
+span{
+    position: relative;
+    display: inline;
+
+}
+
+input[type=checkbox]{
+    height: 15px;
+}
+
+.lb2{
+    top: 25px;
+    left: -232px;
+}
+
+
+.lb3{
+    left: -20%;
+}
+
+
+.lb4,#check4{
+    position: relative;
+}
+
+#check4{
+    top: 25px;
+    left: -41.2%;
+}
+
+.lb4{
+    left: 300px;
+}
+
+/**button positioning**/
+
+.enter{
+    left: 30px;
+    position: absolute;
+    top: 89%;
+    width: 128px;
+}
+
+/**photo credit**/
+#photoCredit{
+    bottom: 5px;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: large;
+    font-weight: 600;
+    left: 50px;
+    position: absolute;
+}
+
+.photoLink:hover{
+    color: #cececf;
+    transition: all .2s ease;
+}
+
+
+.photoLink{
+    text-decoration: none;
+    color: white;
+}
+
+/**Resposive**/
+@media screen and (max-width: 800px) {
+    .ticketSection{
+        border-radius: 5%;
+        height: 433.45px;
+        left: 0;
+        transition: 0.2s ease-in;
+        top: 100px;
+        width: 100%;
+    }
+
+    #logo{
+        left: 5%;
+        transition: 0.2s ease-in;
+    }
+
+    .links{
+        position: absolute;
+        display: inline;
+        right: 3%;
+        transition: 0.2s ease-in;
+    }
+    
+
+    .lb4{
+        left: -290px;
+        top: 21px;
+        transition: 0.2s ease-in;
+    }
+    
+}
+
+@media screen and (max-width: 741px) {
+    .lb4{
+        left: 279px;
+        top: 0px;
+        transition: 0.2s ease-in;
+    }
+    
+}
+
+@media screen and (max-width: 701px) {
+
+    .ticketSection{
+        height: 550px;
+        top: 10px;
+        transition: 0.2s ease-in;
+    }
+
+    /**left-side**/
+    .leftSide{
+        border: 0px;
+        left: 0; 
+        width: 100%;
+        transition: 0.2s ease-in;
+    }
+    
+    #from{
+        padding-left: 35px;
+        top: 10%;
+    }
+    
+    #to{
+        padding-left: 35px;
+        top: 20%;
+    }
+    
+    #ticketType{
+        padding-left: 35px;
+        top: 30%;
+    }
+    
+    /**right side input field**/
+    .rightSide{
+        border: 0;
+        left: 0;
+        width: 100%;
+        transition: 0.2s ease-in;
+    }
+    
+    #dateType{
+        padding-left: 30px;
+        top: 40%;
+    }
+    
+    #classType{
+        top:50%;
+    }
+
+    /**symbols**/
+
+    #fromImg{
+        left: 10px;
+        transition: 0.2s ease-in;
+        top: 11%;
+        z-index: 1;
+    }
+    
+    #toImg{
+        left: 10px;
+        transition: 0.2s ease-in;
+        top: 21%;
+        z-index: 1;
+    }
+    
+    #generalImg{
+        left: 10px;
+        transition: 0.2s ease-in;
+        top: 31%;
+        z-index: 1;
+    }
+    
+    #classImg{
+        left: 10px;
+        transition: 0.2s ease-in;
+        top: 51.5%;
+        z-index: 1;
+    }
+    /**checkbox**/
+
+    .checkboxDiv{
+        left: 30px;
+        transition: 0.2s ease-in;
+        top: 60%;
+    }
+    
+    
+    .lb3{
+        left: -410px;
+        top: 50px;
+    }
+    
+    #check4{
+        top: 70px;
+        left: -543px;
+    }
+    .lb4{
+        left: 15px;
+        top: 45px;
+    }
+
+    /**extras**/
+    
+    #dateFormat{
+        font-size: 7px;;
+        left: 35px;
+        position: absolute;
+        top: 38%;
+    }
+    
+    #imgBtn{
+        left: 90%;
+        top: 16%;
+        z-index: 1;
+    }
+    
+}
+
+@media screen and (max-width: 741px) {
+
+    li{
+        margin-left: 13px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .lb3{
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+    
+    #check4{
+        position: absolute;
+        top: 75px;
+        left: 0px;
+    }
+    .lb4{
+        position: absolute;
+        left: 15px;
+        top: 70px;
+    }
+
+    .enter{
+        left: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .enter{
+        left: 30px;
+        transition: 0.2s ease-in;
+        top: 80%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    li{
+        margin-left: 13px;
+        font-size: 14px;
+        font-weight: 700;
+        right: 2%;
+    }
+}
